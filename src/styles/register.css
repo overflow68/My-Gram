@@ -46,3 +46,21 @@
     color:#a03838
 
 }
+
+#must-logout{
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 200px;
+}
+
+#logout-btn{
+    margin: auto;
+    width:100px ;
+    height: 40px;
+    margin-top: 200px;
+}
+
+#reg{
+    text-align: center;
+}

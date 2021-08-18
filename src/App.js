@@ -4,6 +4,7 @@ import Login from './Pages/Login';
 import {AuthProvider} from './AuthProvider.js';
 import PrivateRoute from "./Pages/PrivateRoute";
 import Register from "./Pages/Register";
+import Profile from "./Pages/Profile";
 
 
 
@@ -22,15 +23,12 @@ function App() {
           <Route  exact path="/register" component={Register}></Route>
         <Route  exact path="/login" component={Login}></Route>
           <PrivateRoute  exact path="/" component={Feed}></PrivateRoute>
-          <PrivateRoute  exact path="/profile" component ={Profile}></PrivateRoute>
+          <PrivateRoute  exact path="/:id"  component ={Profile}></PrivateRoute>
         </Switch>
       </div>
       </AuthProvider>
     </Router>
   );
-}
-function Profile() {
-  return <h2>Profile</h2>;
 }
 
 

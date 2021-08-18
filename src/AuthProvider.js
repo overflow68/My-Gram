@@ -1,6 +1,6 @@
 
 import React, { useContext, useState, useEffect } from "react"
-import { auth } from "./Firebase"
+import { auth,db } from "./Firebase"
 
 const AuthContext = React.createContext()
 
@@ -35,6 +35,7 @@ export function AuthProvider({ children }) {
   function updatePassword(password) {
     return currentUser.updatePassword(password)
   }
+  
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(user => {
@@ -52,7 +53,7 @@ export function AuthProvider({ children }) {
     logout,
     resetPassword,
     updateEmail,
-    updatePassword
+    updatePassword,
   }
 
   return (

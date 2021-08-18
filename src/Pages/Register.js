@@ -23,7 +23,7 @@ function Register() {
     
       setError("");
       setLoading(true);
-      await signup(emailRef.current.value, passwordRef.current.value);
+      await signup(emailRef.current.value, passwordRef.current.value,userRef.current.value);
       
       history.push("/profile");
       setError("Ocorreu um erro ao criar conta.")

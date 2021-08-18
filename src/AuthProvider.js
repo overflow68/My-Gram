@@ -12,9 +12,24 @@ export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState()
   const [loading, setLoading] = useState(true)
 
-  function signup(email, password) {
+  function signup(email, password, username) {
     return auth.createUserWithEmailAndPassword(email, password)
+    .then(function(user) {
+      db.collection('users').doc(user.user.uid).set({
+        username:username,
+        followers:[],
+        following:[],
+        posts:[]
+      }); 
+    })
+    .catch(function(error) {
+      var errorCode = error.code;
+      var errorMessage = error.message;
+      alert(errorMessage)
+    });
   }
+
+  
 
   function login(email, password) {
     return auth.signInWithEmailAndPassword(email, password)
@@ -22,20 +37,7 @@ export function AuthProvider({ children }) {
 
   function logout() {
     return auth.signOut()
-  }
-
-  function resetPassword(email) {
-    return auth.sendPasswordResetEmail(email)
-  }
-
-  function updateEmail(email) {
-    return currentUser.updateEmail(email)
-  }
-
-  function updatePassword(password) {
-    return currentUser.updatePassword(password)
-  }
-  
+  }  
 
   useEffect(() => {
     const unsubscribe = auth.onAuthStateChanged(user => {
@@ -45,15 +47,14 @@ export function AuthProvider({ children }) {
 
     return unsubscribe
   }, [])
+  
 
   const value = {
     currentUser,
     login,
     signup,
     logout,
-    resetPassword,
-    updateEmail,
-    updatePassword,
+  
   }
 
   return (

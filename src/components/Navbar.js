@@ -6,8 +6,11 @@ import {BiPaperPlane} from 'react-icons/bi';
 import {ImCompass2} from 'react-icons/im';
 import {AiOutlineHeart} from 'react-icons/ai';
 import {CgProfile} from 'react-icons/cg';
+import {GrLogout} from 'react-icons/gr';
+import {useAuth} from '../AuthProvider.js'
 
 function Navbar(){
+    const {logout} = useAuth()
     return(
         <div id="navbar">
             <div><h1 id="home-btn">My-Gram</h1></div>
@@ -20,6 +23,7 @@ function Navbar(){
                 <li><ImCompass2/></li>
                 <li><AiOutlineHeart/></li>
                 <li><CgProfile/></li>
+                <li><GrLogout onClick={logout}/></li>
                 </IconContext.Provider>
                 </ul>
                 

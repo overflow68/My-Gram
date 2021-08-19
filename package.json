@@ -1,7 +1,7 @@
 {
   "name": "my-gram",
   "version": "0.1.0",
-  "homepage": "https://overflow68.github.io/My-Gram/login",
+  "homepage": "https://overflow68.github.io/My-Gram/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",

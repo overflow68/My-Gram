@@ -51,7 +51,7 @@ function Register() {
             </form>
             
         </div>
-        <div id="registo-conta"><p>Já tem uma conta? <Link to='/login' id="login-link">Faça login</Link></p></div>
+        <div id="registo-conta"><p>Já tem uma conta? <Link to='/' id="login-link">Faça login</Link></p></div>
         
 </div>) : (<div id="reg"><Navbar/><div id="must-logout">Não podes registar enquanto tens sessão iniciada</div><button id="logout-btn" onClick={logout}>Logout</button></div>)}
        

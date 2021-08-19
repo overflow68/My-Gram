@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/My-Gram/static/css/main.4699cb91.chunk.css",
-    "main.js": "/My-Gram/static/js/main.6120e054.chunk.js",
-    "main.js.map": "/My-Gram/static/js/main.6120e054.chunk.js.map",
+    "main.js": "/My-Gram/static/js/main.08ad2c5b.chunk.js",
+    "main.js.map": "/My-Gram/static/js/main.08ad2c5b.chunk.js.map",
     "runtime-main.js": "/My-Gram/static/js/runtime-main.13409eb1.js",
     "runtime-main.js.map": "/My-Gram/static/js/runtime-main.13409eb1.js.map",
-    "static/js/2.89a5921d.chunk.js": "/My-Gram/static/js/2.89a5921d.chunk.js",
-    "static/js/2.89a5921d.chunk.js.map": "/My-Gram/static/js/2.89a5921d.chunk.js.map",
+    "static/js/2.97fab991.chunk.js": "/My-Gram/static/js/2.97fab991.chunk.js",
+    "static/js/2.97fab991.chunk.js.map": "/My-Gram/static/js/2.97fab991.chunk.js.map",
     "index.html": "/My-Gram/index.html",
     "static/css/main.4699cb91.chunk.css.map": "/My-Gram/static/css/main.4699cb91.chunk.css.map",
-    "static/js/2.89a5921d.chunk.js.LICENSE.txt": "/My-Gram/static/js/2.89a5921d.chunk.js.LICENSE.txt",
+    "static/js/2.97fab991.chunk.js.LICENSE.txt": "/My-Gram/static/js/2.97fab991.chunk.js.LICENSE.txt",
     "static/media/girl.cc488f03.jpg": "/My-Gram/static/media/girl.cc488f03.jpg",
     "static/media/login.css": "/My-Gram/static/media/iphone.3686ea84.png"
   },
   "entrypoints": [
     "static/js/runtime-main.13409eb1.js",
-    "static/js/2.89a5921d.chunk.js",
+    "static/js/2.97fab991.chunk.js",
     "static/css/main.4699cb91.chunk.css",
-    "static/js/main.6120e054.chunk.js"
+    "static/js/main.08ad2c5b.chunk.js"
   ]
 }

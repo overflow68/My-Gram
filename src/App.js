@@ -1,5 +1,5 @@
 import React from 'react';
-import {HashRouter as Router, Switch, Route} from "react-router-dom";
+import {HashRouter, Switch, Route} from "react-router-dom";
 import Login from './Pages/Login';
 import {AuthProvider} from './AuthProvider.js';
 import PrivateRoute from "./Pages/PrivateRoute";
@@ -12,12 +12,11 @@ import Profile from "./Pages/Profile";
 
 function App() {
   
-
  
   
   return (
-    <Router>
       <AuthProvider>
+        <HashRouter>
       <div>
         <Switch> 
           <Route  exact path="/register" component={Register}></Route>
@@ -25,8 +24,9 @@ function App() {
           <PrivateRoute  exact path="/profile"  component ={Profile}></PrivateRoute>
         </Switch>
       </div>
+      </HashRouter>
       </AuthProvider>
-    </Router>
+    
   );
 }
 

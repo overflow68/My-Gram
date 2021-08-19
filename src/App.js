@@ -22,8 +22,7 @@ function App() {
         <Switch> 
           <Route  exact path="/register" component={Register}></Route>
         <Route  exact path="/login" component={Login}></Route>
-          <PrivateRoute  exact path="/" component={Feed}></PrivateRoute>
-          <PrivateRoute  exact path="/:id"  component ={Profile}></PrivateRoute>
+          <PrivateRoute  exact path="/profile"  component ={Profile}></PrivateRoute>
         </Switch>
       </div>
       </AuthProvider>
@@ -32,7 +31,5 @@ function App() {
 }
 
 
-function Feed() {
-  return <h2>Feed</h2>;
-}
+
 export default App;

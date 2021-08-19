@@ -12,14 +12,15 @@ export function AuthProvider({ children }) {
   const [currentUser, setCurrentUser] = useState()
   const [loading, setLoading] = useState(true)
 
-  function signup(email, password, username) {
+  function signup(email, password, username,pic) {
     return auth.createUserWithEmailAndPassword(email, password)
     .then(function(user) {
       db.collection('users').doc(user.user.uid).set({
         username:username,
         followers:[],
         following:[],
-        posts:[]
+        posts:[],
+        picture:pic
       }); 
     })
     .catch(function(error) {

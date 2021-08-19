@@ -10,11 +10,14 @@ function Register() {
   const passwordRef = useRef()
   const confirmRef = useRef()
   const userRef = useRef()
+  const picRef = useRef()
 
   const { signup,currentUser,logout} = useAuth()
   const [error, setError] = useState("")
   const [loading, setLoading] = useState(false)
   const history = useHistory()
+
+
 
 
   async function handleSubmit(e) {
@@ -23,8 +26,7 @@ function Register() {
     
       setError("");
       setLoading(true);
-      await signup(emailRef.current.value, passwordRef.current.value,userRef.current.value);
-      
+      await signup(emailRef.current.value, passwordRef.current.value,userRef.current.value)
       history.push("/profile");
       setError("Ocorreu um erro ao criar conta.")
     

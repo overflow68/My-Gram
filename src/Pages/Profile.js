@@ -25,15 +25,13 @@ useEffect(() => {
   });
 },[])
 
-function showme(){
-  console.log(userDoc)
-}
+
     return (
       <div id="profile-container">
         <div><Navbar/></div>
       <div id="profile">
         <div id="profile-info">
-          <div id="pic"><img onClick={showme} id="pfp" alt="" src={profile}/></div>
+          <div id="pic"><img id="pfp" alt="" src={profile} /></div>
           <div id="stats-container">
             <div id="username"><h1>{!userDoc ? undefined:userDoc.username}</h1></div>
           <div id="stats">

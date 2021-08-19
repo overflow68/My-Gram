@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/my-gram/static/css/main.51697daa.chunk.css",
+    "main.js": "/my-gram/static/js/main.609b695c.chunk.js",
+    "main.js.map": "/my-gram/static/js/main.609b695c.chunk.js.map",
+    "runtime-main.js": "/my-gram/static/js/runtime-main.b5a1ee9f.js",
+    "runtime-main.js.map": "/my-gram/static/js/runtime-main.b5a1ee9f.js.map",
+    "static/js/2.10d5cac4.chunk.js": "/my-gram/static/js/2.10d5cac4.chunk.js",
+    "static/js/2.10d5cac4.chunk.js.map": "/my-gram/static/js/2.10d5cac4.chunk.js.map",
+    "index.html": "/my-gram/index.html",
+    "static/css/main.51697daa.chunk.css.map": "/my-gram/static/css/main.51697daa.chunk.css.map",
+    "static/js/2.10d5cac4.chunk.js.LICENSE.txt": "/my-gram/static/js/2.10d5cac4.chunk.js.LICENSE.txt",
+    "static/media/girl.cc488f03.jpg": "/my-gram/static/media/girl.cc488f03.jpg",
+    "static/media/login.css": "/my-gram/static/media/iphone.3686ea84.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b5a1ee9f.js",
+    "static/js/2.10d5cac4.chunk.js",
+    "static/css/main.51697daa.chunk.css",
+    "static/js/main.609b695c.chunk.js"
+  ]
+}
